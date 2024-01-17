@@ -9,13 +9,22 @@ public class TicTacToe {
             }
         }
     }
+
+    public void addLine(){
+        Cell cell = new Cell();
+        int nbLine = cell.representation.length() * size +1;
+        String line = "-";
+        System.out.println(line.repeat(nbLine));
+    }
+
     public void display(){
-        System.out.println("---------");
+        addLine();
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 System.out.print(board[i][j].getRepresentation());
             }
-            System.out.println("\n---------");
+            System.out.println("|");
+            addLine();
         }
     }
 }
