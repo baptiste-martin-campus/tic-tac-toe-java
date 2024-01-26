@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class InteractionUtilisateur {
 
-    public Scanner question(){
+    public Scanner ask(){
         return new Scanner(System.in);
     }
 }
